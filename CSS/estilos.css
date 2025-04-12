@@ -1,0 +1,134 @@
+/*Fondo y estilos*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/*Pie de pagina abajo*/
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/*Encabezado*/
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+/*Ventanas*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+nav ul li a.activo {
+  background-color: #666;
+  border-radius: 5px;
+}
+
+/*Secciones*/
+.bienvenida, .descripcion, .servicio, .formulario, .galeria, .direccion {
+  text-align: center;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 900px;
+  background-color: #5a5a5a;
+  border-radius: 8px;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.texto {
+  font-size: 16px;
+}
+
+/*Galería*/
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.cuadricula img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*Formulario*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input, button {
+  padding: 8px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/*Pie de página*/
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/*Mejora en dispositivos moviles*/
+@media (max-width: 768px) {
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cuadricula {
+    grid-template-columns: 1fr;
+  }
+}

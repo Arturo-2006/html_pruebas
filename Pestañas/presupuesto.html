@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto - Tapicería Huaraz</title>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+  <div class="contenedor-principal">
+    <header>
+      <h1>Tapicería Huaraz</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Galería</a></li>
+          <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <h2 class="titulo">Solicita un presupuesto</h2>
+        <form>
+          <input type="text" name="nombre" placeholder="Nombre" required pattern="[A-Za-z\s]+" title="Solo letras y espacios">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <input type="text" name="telefono" placeholder="Teléfono" required pattern="[0-9]+" title="Solo números">
+          <input type="text" name="detalles" placeholder="Detalles del servicio" required>
+          <div>
+            <input type="checkbox" required> Acepto la política de privacidad
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tapicería Huaraz. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
